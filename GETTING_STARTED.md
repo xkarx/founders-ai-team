@@ -56,15 +56,11 @@ Fill in:
 
 Click **Create workspace**. This instantly generates a full docs structure for your company under `workspaces/<your-company-slug>/` — nothing to configure, it's ready immediately.
 
-![Filled setup form](docs/screenshots/02-setup-filled.png)
-
 ## 4. Tour: Docs tab
 
 The left tree shows every file in your company's workspace — click any file to render it. This is a live view of the actual files on disk; edit them with any text editor and refresh to see changes.
 
 ![Docs tab with tree expanded](docs/screenshots/03-docs-tree.png)
-
-![A rendered CLAUDE.md doc](docs/screenshots/04-docs-rendered.png)
 
 Key files to know about:
 | File | What it's for |
@@ -95,11 +91,7 @@ Every function starts as an AI agent, grounded in that function's docs:
 - **Design / Engineering / Data & Analytics** — AI agents, click **Chat** to talk to any of them
 - **Lead Agents** (under Product) — **Research** and **Strategy**, two extra sub-agents for those specific sub-skills
 
-Click **Chat** on any agent to open a conversation panel:
-
-![Chat panel open](docs/screenshots/07-chat-panel.png)
-
-Ask it something about your product — it answers grounded in your actual docs, and tells you honestly when a doc is still empty rather than making things up.
+Click **Chat** on any agent to open a conversation panel. Ask it something about your product — it answers grounded in your actual docs, and tells you honestly when a doc is still empty rather than making things up.
 
 ### Propose to team
 
