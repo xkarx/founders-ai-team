@@ -1,8 +1,8 @@
 {
-  "name": "founder-os",
+  "name": "founders-ai-team",
   "version": "1.0.0",
   "private": true,
-  "description": "Local GUI for Founder OS — a Team OS generator + AI teammates for solo founders",
+  "description": "Local GUI for Founder's AI Team — a Team OS generator + AI teammates for solo founders",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"

@@ -587,5 +587,5 @@ app.post('/api/ws/:slug/proposals/:timestamp/feature', async (req, res) => {
 
 const PORT = process.env.PORT || 4174;
 app.listen(PORT, () => {
-  console.log(`Founder OS running at http://localhost:${PORT}`);
+  console.log(`Founder's AI Team running at http://localhost:${PORT}`);
 });

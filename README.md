@@ -1,4 +1,4 @@
-# Founder OS
+# Founder's AI Team
 
 An operating system for solo founders — enter your company name and one-liner, and get a full "Team OS" knowledge base (product docs, strategy, customers, engineering, analytics) plus a local web app with AI teammates standing in for every role you haven't hired yet.
 

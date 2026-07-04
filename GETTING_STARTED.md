@@ -1,10 +1,10 @@
-# Getting Started with Founder OS
+# Getting Started with Founder's AI Team
 
-A step-by-step walkthrough for setting up and using Founder OS for the first time. No prior context needed.
+A step-by-step walkthrough for setting up and using Founder's AI Team for the first time. No prior context needed.
 
 ## What this is
 
-Founder OS generates a "Team OS" — a structured docs repo (product context, strategy, engineering, analytics) — for your company, and gives you a local web app to browse it, manage a backlog, and chat with AI teammates standing in for roles you haven't hired yet.
+Founder's AI Team generates a "Team OS" — a structured docs repo (product context, strategy, engineering, analytics) — for your company, and gives you a local web app to browse it, manage a backlog, and chat with AI teammates standing in for roles you haven't hired yet.
 
 ## 1. Prerequisites
 
@@ -17,7 +17,7 @@ Founder OS generates a "Team OS" — a structured docs repo (product context, st
 
 ```bash
 git clone <this-repo-url>
-cd founder-os/webapp
+cd founders-ai-team/webapp
 npm install
 cp .env.example .env
 ```
@@ -39,7 +39,7 @@ npm start
 You should see:
 
 ```
-Founder OS running at http://localhost:4174
+Founder's AI Team running at http://localhost:4174
 ```
 
 Open **http://localhost:4174** in your browser.
