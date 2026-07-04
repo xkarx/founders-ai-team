@@ -19,7 +19,7 @@ Ask the user for:
 ## Step 2: Check for an existing account
 
 Look for `product-development/product/customers/accounts/{account}/`. If it doesn't exist, create it:
-- `CLAUDE.md` (contacts + links — copy the shape from an existing account if one exists)
+- `CLAUDE.md` (contacts + links: copy the shape from an existing account if one exists)
 - `account-context.md` (goals, risks, what they care about)
 - `calls/summaries/` and `calls/transcripts/`
 
@@ -43,4 +43,4 @@ Add or update the row for this account in `product-development/product/customers
 
 ## Step 7: Present a short recap
 
-Show the user: key insights, any feature requests surfaced, and suggested next steps — so they can act on it without opening the files.
+Show the user: key insights, any feature requests surfaced, and suggested next steps: so they can act on it without opening the files.

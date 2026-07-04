@@ -1,4 +1,4 @@
-# Engineering — {{COMPANY_NAME}}
+# Engineering: {{COMPANY_NAME}}
 
 ## Architecture
 

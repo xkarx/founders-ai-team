@@ -285,7 +285,7 @@ async function loadTeam() {
     card.innerHTML = `
       <span class="badge ${isAI ? 'ai' : 'real'}">${isAI ? 'AI Agent' : 'Real'}</span>
       <h3>${row.function}</h3>
-      <div class="person">${row.person === '—' ? 'Unfilled' : row.person}</div>
+      <div class="person">${row.person === 'TBD' ? 'Unfilled' : row.person}</div>
       ${buttonHtml}
     `;
     if (isProduct) {
@@ -302,7 +302,7 @@ async function loadTeam() {
         const btn = document.createElement('button');
         btn.className = 'sub-agent-btn';
         btn.textContent = `💬 ${sub.label}`;
-        btn.addEventListener('click', () => openChat(sub.role, `Product — ${sub.label}`));
+        btn.addEventListener('click', () => openChat(sub.role, `Product: ${sub.label}`));
         subWrap.appendChild(btn);
       });
       card.appendChild(subWrap);
@@ -319,7 +319,7 @@ async function openChat(role, label) {
   currentRole = role;
   document.getElementById('propose-panel').classList.add('hidden');
   document.getElementById('chat-title').textContent = label;
-  document.getElementById('chat-subtitle').textContent = 'AI teammate — ' + currentWorkspace.companyName;
+  document.getElementById('chat-subtitle').textContent = 'AI teammate: ' + currentWorkspace.companyName;
   document.getElementById('chat-panel').classList.remove('hidden');
   document.getElementById('chat-error').classList.add('hidden');
   const res = await fetch(`/api/ws/${currentWorkspace.slug}/chat/${role}`);
@@ -446,7 +446,7 @@ function renderProposalLog(proposals) {
   const log = document.getElementById('propose-log');
   log.innerHTML = '';
   if (!proposals || proposals.length === 0) {
-    log.innerHTML = '<p class="empty-hint">Nothing proposed yet — ask the team something below.</p>';
+    log.innerHTML = '<p class="empty-hint">Nothing proposed yet: ask the team something below.</p>';
     return;
   }
   proposals.forEach((entry) => log.appendChild(renderProposalEntry(entry)));

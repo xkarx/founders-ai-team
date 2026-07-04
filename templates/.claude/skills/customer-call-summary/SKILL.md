@@ -13,7 +13,7 @@ Defines how to summarize a call with a customer or prospect.
 
 - Opening paragraph: status/progress since last call (skip if first call)
 - What this call covered, in 1-2 sentences
-- Weave in verbatim quotes where they capture something important — *"quote" - Speaker*
+- Weave in verbatim quotes where they capture something important: *"quote" - Speaker*
 - **Key gaps/concerns:** bullet list of anything implied, not just explicitly asked for
 
 ### 2. Insights / Learnings
@@ -45,11 +45,11 @@ Organized by topic, table format:
 
 ### 5. Follow-up note
 
-A short recap you could actually send the person after the call — what was covered, what happens next.
+A short recap you could actually send the person after the call: what was covered, what happens next.
 
 ## Guidelines
 
 - Keep quotes verbatim, attributed, and concise
 - Capture the "why" behind a request, not just the ask
 - Detailed enough that future-you (re-reading in 3 months) understands full context
-- Reverse-chronological within a file — newest call at the top
+- Reverse-chronological within a file: newest call at the top

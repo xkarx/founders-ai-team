@@ -211,7 +211,7 @@ app.get('/api/ws/:slug/features', (req, res) => {
 });
 
 function writeFeatureStubs(root, key, name, { prdPath, planPath, metricsPath }) {
-  const stub = (title) => `# ${title}: ${name}\n\n**Status:** idea — not yet scoped\n`;
+  const stub = (title) => `# ${title}: ${name}\n\n**Status:** idea: not yet scoped\n`;
   for (const [rel, title] of [
     [`product-development/${prdPath}`, 'PRD'],
     [`product-development/${planPath}`, 'Plan'],
@@ -246,7 +246,7 @@ function createFeatureExact(root, name, oneLiner) {
   return { key, ...body[key] };
 }
 
-// Creates a feature, auto-suffixing the key if it collides — for automated/AI-driven creation.
+// Creates a feature, auto-suffixing the key if it collides: for automated/AI-driven creation.
 function createFeatureAutoKey(root, name, oneLiner) {
   const { header, body } = readFeatureIndex(root);
   let key = slugify(name);
@@ -530,7 +530,7 @@ app.post('/api/ws/:slug/propose', async (req, res) => {
         const text = await callLLM({
           system,
           maxTokens: 700,
-          messages: [{ role: 'user', content: `The founder just proposed this to the whole team:\n\n"${message}"\n\nGive your take from your function's perspective — concise, opinionated, and specific.` }],
+          messages: [{ role: 'user', content: `The founder just proposed this to the whole team:\n\n"${message}"\n\nGive your take from your function's perspective: concise, opinionated, and specific.` }],
         });
         return { role, label: ROLE_CONFIG[role].label, text };
       })

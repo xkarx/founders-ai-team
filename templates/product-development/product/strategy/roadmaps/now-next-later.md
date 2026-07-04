@@ -1,10 +1,10 @@
-# Roadmap — Now / Next / Later
+# Roadmap: Now / Next / Later
 
 _Last updated: fill in when you update this_
 
 ## Now
 
-*(what you're actively building — pull from `product-development/feature-index.yaml`)*
+*(what you're actively building: pull from `product-development/feature-index.yaml`)*
 
 ## Next
 

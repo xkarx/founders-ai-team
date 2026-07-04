@@ -1,10 +1,10 @@
 # Onboarding: General
 
-Setup and orientation for anyone new joining {{COMPANY_NAME}} — a contractor, a co-founder, or your first hire.
+Setup and orientation for anyone new joining {{COMPANY_NAME}}: a contractor, a co-founder, or your first hire.
 
 ## Shared tools
 
-*(fill in as you adopt real tools — e.g. GitHub, Linear/Jira, Slack, Google Workspace, Figma)*
+*(fill in as you adopt real tools: e.g. GitHub, Linear/Jira, Slack, Google Workspace, Figma)*
 
 | Tool | Purpose | Access |
 |------|---------|--------|

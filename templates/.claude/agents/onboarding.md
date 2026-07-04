@@ -3,7 +3,7 @@ name: onboarding
 description: Run the onboarding workflow for a new team member joining {{COMPANY_NAME}}. Walks through the general onboarding guide and tracks setup progress.
 ---
 
-# Onboarding Agent — {{COMPANY_NAME}}
+# Onboarding Agent: {{COMPANY_NAME}}
 
 Help a new person (contractor, co-founder, or first hire) get set up at {{COMPANY_NAME}}.
 
