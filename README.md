@@ -4,6 +4,15 @@ An operating system for solo founders — enter your company name and one-liner,
 
 Inspired by the [Team OS pattern](https://github.com/xkarx/team-os-example-repo) — a shared knowledge base that turns a team's collective context into something AI can actually use — adapted for a team of one.
 
+## Screenshots
+
+| | |
+|---|---|
+| ![Setup screen](docs/screenshots/01-setup.png) | ![Docs tab](docs/screenshots/03-docs-tree.png) |
+| ![Backlog board](docs/screenshots/05-features-board.png) | ![Team tab](docs/screenshots/06-team-tab.png) |
+
+![Propose to team](docs/screenshots/08-propose-panel.png)
+
 ## What's in here
 
 - `templates/` — the generic scaffold used to generate a new company's workspace (product/design/engineering/analytics docs, PRDs, customer notes, strategy, `.claude/agents` for each AI teammate, a `/customer-call` command + skill)
