@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Founder OS</title>
+<link rel="stylesheet" href="style.css" />
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<!-- SETUP SCREEN -->
+<div id="setup-screen" class="setup-screen hidden">
+  <div class="setup-card">
+    <h1>Founder OS</h1>
+    <p class="setup-sub">An operating system for solo founders — your docs, roadmap, and an AI teammate for every role you haven't hired yet.</p>
+    <form id="setup-form">
+      <label>Company / project name</label>
+      <input id="setup-company" type="text" placeholder="e.g. Acme Inc" required />
+      <label>One-liner</label>
+      <input id="setup-oneliner" type="text" placeholder="What does it do, in one sentence?" />
+      <label>Your name</label>
+      <input id="setup-founder" type="text" placeholder="e.g. Jordan" />
+      <button type="submit">Create workspace</button>
+    </form>
+    <div id="setup-existing">
+      <p class="setup-sub">Or open an existing workspace:</p>
+      <div id="existing-list" class="existing-list"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app" class="app hidden">
+  <aside class="sidebar">
+    <div class="brand">
+      <span id="brand-name">Founder OS</span>
+      <span id="brand-sub">TEAM OS</span>
+    </div>
+    <button id="switch-workspace" class="switch-btn">↺ Switch / new company</button>
+    <nav>
+      <button class="nav-btn active" data-view="docs">📄 Docs</button>
+      <button class="nav-btn" data-view="features">🧩 Features</button>
+      <button class="nav-btn" data-view="team">👥 Team</button>
+    </nav>
+  </aside>
+
+  <main class="content">
+    <!-- DOCS VIEW -->
+    <section id="view-docs" class="view active">
+      <div class="docs-layout">
+        <div id="file-tree" class="file-tree"></div>
+        <div id="file-content" class="file-content markdown-body">
+          <p class="empty-hint">Select a doc from the tree to view it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES VIEW -->
+    <section id="view-features" class="view">
+      <div class="board-toolbar">
+        <h1>Backlog</h1>
+        <div class="board-toolbar-actions">
+          <input id="feature-search" type="text" placeholder="Search features…" />
+          <button id="add-feature-btn">+ Add feature</button>
+        </div>
+      </div>
+      <div id="add-feature-form" class="add-feature-form hidden">
+        <input id="new-feature-name" type="text" placeholder="Feature name (e.g. family-portal)" />
+        <input id="new-feature-oneliner" type="text" placeholder="One-liner" />
+        <button id="new-feature-submit">Add</button>
+        <button id="new-feature-cancel" class="secondary">Cancel</button>
+      </div>
+      <div id="kanban-board" class="kanban-board"></div>
+    </section>
+
+    <!-- TEAM VIEW -->
+    <section id="view-team" class="view">
+      <h1>Team</h1>
+      <div id="team-cards" class="team-cards"></div>
+    </section>
+  </main>
+
+  <!-- CHAT PANEL -->
+  <div id="chat-panel" class="chat-panel hidden">
+    <div class="chat-header">
+      <div>
+        <div id="chat-title" class="chat-title">Agent</div>
+        <div id="chat-subtitle" class="chat-subtitle">AI teammate</div>
+      </div>
+      <div class="chat-actions">
+        <button id="chat-reset" title="Clear conversation">Reset</button>
+        <button id="chat-close" title="Close">✕</button>
+      </div>
+    </div>
+    <div id="chat-messages" class="chat-messages"></div>
+    <div id="chat-error" class="chat-error hidden"></div>
+    <form id="chat-form" class="chat-form">
+      <input id="chat-input" type="text" placeholder="Ask your teammate…" autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <!-- PROPOSE PANEL -->
+  <div id="propose-panel" class="chat-panel propose-panel hidden">
+    <div class="chat-header">
+      <div>
+        <div class="chat-title">Propose to team</div>
+        <div class="chat-subtitle">Fans out to every AI teammate</div>
+      </div>
+      <div class="chat-actions">
+        <button id="propose-close" title="Close">✕</button>
+      </div>
+    </div>
+    <div id="propose-log" class="propose-log"></div>
+    <div id="propose-error" class="chat-error hidden"></div>
+    <form id="propose-form" class="chat-form">
+      <input id="propose-input" type="text" placeholder="What are you thinking of building?" autocomplete="off" />
+      <button type="submit">Propose</button>
+    </form>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

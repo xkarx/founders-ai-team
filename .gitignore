@@ -1,0 +1,6 @@
+node_modules/
+webapp/.env
+webapp/data/
+workspaces/*
+!workspaces/.gitkeep
+.DS_Store

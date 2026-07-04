@@ -1,0 +1,17 @@
+{
+  "name": "founder-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local GUI for Founder OS — a Team OS generator + AI teammates for solo founders",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.0",
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "js-yaml": "^4.1.0"
+  }
+}

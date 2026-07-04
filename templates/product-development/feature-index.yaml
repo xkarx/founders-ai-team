@@ -1,0 +1,10 @@
+# {{COMPANY_NAME}} — Feature Index
+# Every feature mapped to its docs. Add a new entry per feature as you scope it.
+#
+# Example shape:
+# my-feature:
+#   status: idea   # idea | scoped | building | shipped
+#   one-liner: One sentence describing what this feature does and for whom.
+#   prd: product/PRDs/my-feature/prd.md
+#   eng-plan: engineering/plans/my-feature/plan.md
+#   metrics: analytics/metrics/my-feature/metrics.md

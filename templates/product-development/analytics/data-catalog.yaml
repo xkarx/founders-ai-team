@@ -1,0 +1,4 @@
+# {{COMPANY_NAME}} — Data Warehouse Table Registry
+# Add a row per table once you have real data infrastructure.
+
+tables: []
