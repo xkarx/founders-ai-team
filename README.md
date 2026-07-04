@@ -21,6 +21,8 @@ npm start
 
 Open `http://localhost:4174`. The first screen lets you create a new company workspace or open an existing one.
 
+**New here?** See [GETTING_STARTED.md](GETTING_STARTED.md) for a full walkthrough — setup, the docs browser, the Kanban backlog, chatting with AI teammates, and troubleshooting.
+
 ## AI teammates
 
 Every function starts as an AI agent (Design, Engineering, Data & Analytics) grounded in that function's docs — chat with them from the Team tab. Product also gets two lead sub-agents, Research and Strategy. Replace any row in the root `CLAUDE.md` team table with a real person's name once you hire one; the agent stays available as backup either way.
